@@ -1,0 +1,115 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+  <meta name="generator" content="PSPad">
+  <meta name="title" CONTENT="MPxConverter User Guide">
+  <meta name="author" CONTENT="Alexandru Trutia">
+  <STYLE TYPE="text/css" MEDIA=screen>
+  <!--
+  body {font:normal 8pt/13pt verdana, arial, sans-serif; font-size:12px; margin:0; padding:0;}
+  p {margin-left:10px; margin-right:10px;}
+  a {color:rgb(129,138,104);}
+  .itemtitle {border:1px solid rgb(215,215,215); margin-left:10px; margin-right:10px; margin-top:20px; margin-bottom:0px; font-size:120%; font-weight:bold; background:rgb(229,238,204);}
+  -->
+  </STYLE>
+  <title>MPxConverter User Guide</title>
+  </head>
+  <body>
+  <div class="itemtitle">Bytessence MPxConverter user guide</div><br>
+  <p>Contents:</p>
+  <ol>
+    <li><a href="#a1">What does this program do?</a></li>
+    <li><a href="#a2">Background information</a></li>
+    <li><a href="#a3">How to use it?</a></li>
+    <li><a href="#a4">Keyboard shortcuts</a></li>
+    <li><a href="#a5">Translations</a></li>
+    <li><a href="#a6">Other information</a></li>
+    <li><a href="#a7">Contact</a></li>
+  </ol>
+  <a name="a1"></a>
+  <div class="itemtitle">1. What does this program do?</div><br>
+  <p>
+  MPxConverter is a free, open source program that acts as a graphical interface for
+  the AMV-Codec-Tools project, a special FFMpeg build that contains AMV (Advanced  Media 
+  Video) encoding possibilities. The main features of this program are open source, portable
+  code, speed, and compatibility with many video formats. This new implementation can work
+  for Actions and Sunplus hardware players. It has been tested on Actions ATJ2093H and Sunplus
+  SPMP3052 players.
+  </p>
+  <a name="a2"></a>
+  <div class="itemtitle">2. Background information</div><br>
+  <p>
+  In order to keep the size small and the code portable, MPxConverter was written
+  in PureBasic 4 (<a href="http://www.purebasic.com">www.purebasic.com</a>). The code can be compiled on both Win32 and
+  Linux in unmodified form (no platform specific changes are needed). The FFMpeg
+  executable is compiled from the the AMV-Codec-Tools repository. There is no
+  difference between the Windows and Linux FFMpeg build, other than the versions of
+  the libraries used (libfaad, libxvid, libmp3lame). On Windows, the compilation was done
+  with the "--enable-memalign-hack" flag. For the Linux build, you need to install
+  the following packages: libfaad, libxvid, libmp3lame and libgtk2.0+.
+  </p>
+  <a name="a3"></a>
+  <div class="itemtitle">3. How to use it?</div><br>
+  <p>
+  The interface was created for conversion with minimal efforts. Here's how to convert
+  a file:</p>
+  <ul>
+    <li>Run the program</li>
+    <li>Press the add button on the toolbar (or select Add video from the file menu)
+    to add one or more files.</li>
+    <li>In the dialog that appears, press "Browse" to choose the input files</li>
+    <li>Choose an output path (for example desktop) but never the player itself!</li>
+    <li>Choose the player model, the resolution, FPS, quality. If you have problems (e.g
+    choppy playback) make sure to lower the quality/FPS. Press Add, then Close.</li>
+    <li>You can use the move up/down buttons to arrange the video conversion order (if
+    you have added more than one file)</li>
+    <li>After the conversion ends you can close the main window to quit the program</li>
+  </ul>
+  <p>
+  You can also add files by dragging and dropping them on the list. A dialog will be shown
+  where you can tweak the conversion options.<br><br>
+  Note that some files may not convert well. If you have such problems, you can activate the
+  logging function in settings and try to convert again. MPxConverter will then write down in
+  the log file all the actions and the problem can be tracked down with ease. Send the respective
+  log file in an archive to me and i'll try to find a fix.
+  </p>
+  <a name="a4"></a>
+  <div class="itemtitle">4. Keyboard shortcuts</div><br>
+  <p>
+  Ctrl + O - Open a previously saved conversion list<br>
+  Ctrl + S - Save all the contents of the conversion list to a file<br>
+  Ctrl + A - Add a video file to the list<br>
+  Ctrl + R, Delete - Remove a video from the list<br>
+  F1 - Open this file<br>
+  </p>
+  <a name="a5"></a>
+  <div class="itemtitle">5. Translations</div><br>
+  <p>
+  Like it's predecessor, MPxConverter supports multiple languages. The information
+  is stored in INI files, in ASCII format. If you want to translate the program,
+  please make sure to check MPxConverter's page on the internet to see if it wasn't
+  already translated. See the 7-th section of this document for contact information.
+  If you downloaded a language file and you want to install it, just copy the INI
+  file in the Localization folder. Then you will be able to see it in the settings
+  dialog. Just select it, press OK and the settings will be memorised.
+  </p>
+  <a name="a6"></a>
+  <div class="itemtitle">6. Other information</div><br>
+  <p>
+  MPxConverter is (c) 2008-2009 Alexandru Trutia, Bytessence software. All rights reserved.
+  All trademarks including but not limited to Windows, Microsoft, NT, Intel, IBM, Internet
+  Explorer are used for identification purposes only and are the property of their respective
+  owners. MPxConverter is licensed under GNU GENERAL PUBLIC LICENSE (v3).
+  </p>
+  <a name="a7"></a>
+  <div class="itemtitle">7. Contact</div><br>
+  <p>
+  Support e-mail: <a href="mailto:support@bytessence.com">support@bytessence.com</a><br>
+  Website: <a href="http://www.bytessence.com">www.bytessence.com</a>
+  </p>
+  <br><br>
+  </body>
+</html>
+  
